@@ -6,7 +6,7 @@ import { PeopleList } from './features/counter/PeopleList';
 function App() {
   return (
     <div className="App">
-      <div>React-Redux</div>
+      <div>React-Redux-Toolkit</div>
       <Counter/>
       <AddFormPerson/>
       <PeopleList/>

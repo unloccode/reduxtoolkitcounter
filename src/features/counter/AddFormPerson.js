@@ -11,7 +11,7 @@ export function AddFormPerson(){
     function handleSubmit(e){
         if(person !== ''){
             //do something
-            //send data back to store
+            //send data back to store through the reducer on contactSlice
             dispatch(addPerson(person));
             setPerson('');
         }
