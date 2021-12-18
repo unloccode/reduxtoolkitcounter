@@ -1,6 +1,7 @@
 import './App.css';
 import { Counter } from './features/counter/Counter';
 import { AddFormPerson } from './features/counter/AddFormPerson';
+import { PeopleList } from './features/counter/PeopleList';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <div>React-Redux</div>
       <Counter/>
       <AddFormPerson/>
+      <PeopleList/>
     </div>
   );
 }

@@ -1,14 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 export const contactSlice = createSlice({
-    name: 'saveme',
+    name: 'phonebook',
     initialState: {
         contacts: ["James Smith", "Thomas Anderson", "Bruce Wayne"],
+        value: 0
     },
     reducers: {
         addPerson: (state, action) => {
             //check array length
-            console.log(state.contacts.length);
             if(state.contacts.length !== 0){
                 state.contacts.forEach((user)=>{
                     console.log(user);
@@ -26,3 +26,4 @@ export const contactSlice = createSlice({
 
 export const { addPerson } = contactSlice.actions;
 export default contactSlice.reducer;
+export const selectContact = state => state.simu.contacts;
